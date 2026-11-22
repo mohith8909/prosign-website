@@ -3740,10 +3740,9 @@ select.bf-inp,select{cursor:pointer!important}
 .chroma-card-glow{box-shadow:inset 0 0 0 1.5px var(--chroma-accent),inset 0 0 18px -8px var(--chroma-accent);opacity:calc(var(--chroma-border) * var(--chroma-power))}
 /* industry filter: non-matching clients step back (the grid keeps its shape) */
 .chroma-card.pc-dim{opacity:.22;transform:scale(.97);filter:saturate(0)}
-/* touch screens have no hover: show the logos in colour */
+/* V73 — touch screens: the spotlight follows the scroll (and taps), so keep the effect but tighten it */
 @media (hover:none),(pointer:coarse){
-  .chroma-color{opacity:1;-webkit-mask-image:none;mask-image:none}
-  .chroma-wash,.chroma-card-glow{display:none}
+  .pc-chroma{--chroma-r:230px}
 }
 @media (max-width:900px){.pc-chroma{--chroma-cols:2;--chroma-min:160px;--chroma-gap:12px}
   .pc-chroma .chroma-card:last-child:nth-child(odd){grid-column:1 / -1}
@@ -8449,12 +8448,45 @@ window.PROSIGN_MEDIA = {
   function wake(){ if(!raf) raf = requestAnimationFrame(frame); }
   root.addEventListener('pointermove', function(e){
     if(e.pointerType !== 'mouse') return;
+    touchMode = false;
     var box = root.getBoundingClientRect();
     st.tx = e.clientX - box.left; st.ty = e.clientY - box.top;
     if(!st.primed || st.power < .02){ st.x = st.tx; st.y = st.ty; st.primed = true; }
     st.target = 1; wake();
   });
-  root.addEventListener('pointerleave', function(){ st.target = 0; wake(); });
+  root.addEventListener('pointerleave', function(e){ if(e.pointerType === 'mouse'){ st.target = 0; wake(); } });
+  /* V73 — TOUCH: no hover on phones, so the spotlight rides the scroll. It sits on
+     the middle of the screen; each row of logos turns to colour as it passes.
+     A tap moves the light to that spot for a moment. */
+  var touchMode = window.matchMedia && window.matchMedia('(hover: none), (pointer: coarse)').matches;
+  var inView = false, holdUntil = 0, holdTimer = 0;
+  function aimAtScroll(){
+    if(!touchMode || !inView || performance.now() < holdUntil) return;
+    var box = root.getBoundingClientRect(), mid = window.innerHeight * .5;
+    st.tx = box.width / 2;
+    st.ty = clamp(mid - box.top, 0, box.height);
+    var on = box.top < mid && box.bottom > mid * .6;
+    if(on && (!st.primed || st.power < .02)){ st.x = st.tx; st.y = st.ty; st.primed = true; }
+    st.target = on ? 1 : 0; wake();
+  }
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      inView = es[0].isIntersecting;
+      if(touchMode){ if(inView) aimAtScroll(); else { st.target = 0; wake(); } }
+    }).observe(root);
+  } else inView = true;
+  window.addEventListener('scroll', aimAtScroll, { passive: true });
+  window.addEventListener('resize', aimAtScroll, { passive: true });
+  root.addEventListener('pointerdown', function(e){
+    if(e.pointerType === 'mouse') return;
+    touchMode = true;
+    var box = root.getBoundingClientRect();
+    st.tx = e.clientX - box.left; st.ty = e.clientY - box.top;
+    if(!st.primed || st.power < .02){ st.x = st.tx; st.y = st.ty; st.primed = true; }
+    st.target = 1; wake();
+    holdUntil = performance.now() + 2200;
+    clearTimeout(holdTimer); holdTimer = setTimeout(function(){ holdUntil = 0; aimAtScroll(); }, 2250);
+  });
   if('ResizeObserver' in window) new ResizeObserver(place).observe(root);
   window.addEventListener('load', place);
   place();
