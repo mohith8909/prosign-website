@@ -12,15 +12,19 @@
 <meta content="Prosign Communications — Chennai's Premier Advertising Agency" property="og:title"/>
 <meta content="PAN India media planning, brand strategy, digital, OOH, and print campaigns from a Chennai-based agency with 18+ years of experience." property="og:description"/>
 <meta content="en_IN" property="og:locale"/>
-<meta content="summary" name="twitter:card"/>
+<meta content="summary_large_image" name="twitter:card"/>
 <meta content="Prosign Communications — Chennai's Premier Advertising Agency" name="twitter:title"/>
 <meta content="PAN India media planning, brand strategy, digital, OOH, and print campaigns from a Chennai-based agency with 18+ years of experience." name="twitter:description"/>
-<!-- V45.12 — SEO: og:image/twitter:image intentionally omitted. This file's
-     only image asset is a small base64-inlined nav/footer logo (_LS,
-     injected by JS) — not a real, hosted, shareable social-preview image.
-     A wrong or missing og:image renders worse in link previews than none
-     at all; add a proper hosted image URL here once one exists rather
-     than guessing a path that may 404. -->
+<!-- V79 — site icon + share preview (absolute URLs point at the live GitHub Pages site;
+     switch them to the own domain when the site moves there) -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"/>
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png"/>
+<meta name="theme-color" content="#E87716"/>
+<meta property="og:url" content="https://mohith8909.github.io/prosign-website/"/>
+<meta property="og:image" content="https://mohith8909.github.io/prosign-website/assets/og-image.jpg"/>
+<meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Prosign Communications — We Make Brands Move. INS-accredited, Chennai, est. 2008."/>
+<meta name="twitter:image" content="https://mohith8909.github.io/prosign-website/assets/og-image.jpg"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -84,7 +88,7 @@
 }
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--wht);color:var(--blk);font-family:'Plus Jakarta Sans',sans-serif;overflow-x:hidden;cursor:none}
+body{background:var(--wht);color:var(--blk);font-family:'Plus Jakarta Sans',sans-serif;overflow-x:hidden;cursor:auto}
 a{text-decoration:none;color:inherit}
 /* V45.10 — accessibility: only one element in this file (.bf-inp) had any
    focus style; everything else — nav links, the 6 service cards, work
@@ -246,7 +250,7 @@ body.cur-text #cur-ring{
 /* ── NAV ── */
 #nav{position:fixed;top:0;width:100%;z-index:1000;padding:18px 64px;display:flex;align-items:center;justify-content:space-between;transition:padding .55s cubic-bezier(.22,1,.36,1),background .4s ease,box-shadow .4s ease,backdrop-filter .4s ease}
 #nav.stuck{background:rgba(246,244,240,.92);backdrop-filter:blur(24px) saturate(1.4);-webkit-backdrop-filter:blur(24px) saturate(1.4);padding-top:12px;padding-bottom:12px;box-shadow:0 1px 0 rgba(17,17,17,.07),0 4px 24px rgba(0,0,0,.05)}
-.nav-logo{cursor:none;display:flex;align-items:center}
+.nav-logo{cursor:auto;display:flex;align-items:center}
 .nav-logo img{height:53px;width:auto;display:block;background:transparent}
 
 /* ══ V31: PREMIUM ENTRANCE ANIMATIONS ══ */
@@ -293,10 +297,10 @@ body.cur-text #cur-ring{
 .gnav-list li a:hover{color:var(--o);letter-spacing:2.5px}
 .gnav-list li.gon a{color:var(--o)}
 /* ══ V31: CTA PREMIUM HOVER ENHANCEMENTS ══ */
-.gnav-cta{display:inline-block;padding:9px 22px;background:var(--o);color:var(--wht);border-radius:50px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;box-shadow:0 4px 20px rgba(232,119,22,.35);transition:background .3s,transform .28s cubic-bezier(.22,1,.36,1),box-shadow .3s;position:relative;overflow:hidden;cursor:none}
+.gnav-cta{display:inline-block;padding:9px 22px;background:var(--o);color:var(--wht);border-radius:50px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;box-shadow:0 4px 20px rgba(232,119,22,.35);transition:background .3s,transform .28s cubic-bezier(.22,1,.36,1),box-shadow .3s;position:relative;overflow:hidden;cursor:auto}
 .gnav-cta:hover{background:var(--o4);transform:translateY(-3px) scale(1.04);box-shadow:0 12px 32px rgba(232,119,22,.45),0 4px 12px rgba(232,119,22,.25)}
 .gnav-cta:active{transform:translateY(-1px) scale(.98)}
-.btn-prim{display:inline-flex;align-items:center;gap:10px;background:var(--blk);color:var(--wht);padding:15px 40px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;position:relative;overflow:hidden;cursor:none;transition:box-shadow .4s,transform .28s cubic-bezier(.22,1,.36,1)}
+.btn-prim{display:inline-flex;align-items:center;gap:10px;background:var(--blk);color:var(--wht);padding:15px 40px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;position:relative;overflow:hidden;cursor:auto;transition:box-shadow .4s,transform .28s cubic-bezier(.22,1,.36,1)}
 .btn-prim::before{content:'';position:absolute;inset:0;background:var(--o);transform:scaleX(0);transform-origin:right;transition:transform .45s cubic-bezier(.77,0,.175,1)}
 .btn-prim:hover::before{transform:scaleX(1);transform-origin:left}
 .btn-prim:hover{box-shadow:0 16px 48px rgba(232,119,22,.36),0 4px 16px rgba(0,0,0,.12);transform:translateY(-3px) scale(1.02)}
@@ -304,11 +308,11 @@ body.cur-text #cur-ring{
 .btn-prim span,.btn-prim svg{position:relative;z-index:1}
 .btn-prim svg{transition:transform .35s cubic-bezier(.22,1,.36,1)}
 .btn-prim:hover svg{transform:translateX(7px)}
-.btn-glow{display:inline-flex;align-items:center;gap:10px;background:var(--o);color:var(--wht);padding:16px 44px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border:none;cursor:none;transition:all .3s cubic-bezier(.22,1,.36,1);box-shadow:0 8px 30px rgba(232,119,22,.32)}
+.btn-glow{display:inline-flex;align-items:center;gap:10px;background:var(--o);color:var(--wht);padding:16px 44px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border:none;cursor:auto;transition:all .3s cubic-bezier(.22,1,.36,1);box-shadow:0 8px 30px rgba(232,119,22,.32)}
 .btn-glow:hover{transform:translateY(-4px) scale(1.03);box-shadow:0 20px 60px rgba(232,119,22,.45),0 6px 20px rgba(232,119,22,.2)}
 .hbg{
   display:none;flex-direction:column;justify-content:center;align-items:center;
-  width:40px;height:40px;cursor:none;padding:0;
+  width:40px;height:40px;cursor:auto;padding:0;
   border-radius:50%;
   transition:background .3s;
   position:relative;z-index:1001;
@@ -360,7 +364,7 @@ body.cur-text #cur-ring{
   border-bottom:1px solid rgba(255,255,255,.06);
   text-decoration:none;
   transition:color .25s ease,letter-spacing .3s ease;
-  cursor:none;
+  cursor:auto;
 }
 .mob-link:last-child{border-bottom:none}
 .mob-link:hover{color:var(--wht);letter-spacing:-1px}
@@ -378,7 +382,7 @@ body.cur-text #cur-ring{
   font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:700;
   letter-spacing:1px;text-transform:uppercase;
   border-radius:50px;
-  transition:background .3s,transform .2s;cursor:none;
+  transition:background .3s,transform .2s;cursor:auto;
 }
 .mob-cta:hover{background:var(--o4);transform:translateY(-2px)}
 #mobile-nav-footer{
@@ -510,7 +514,7 @@ section,footer{position:relative;z-index:1}
   display:inline-block;
   perspective:600px;
   perspective-origin:50% 50%;
-  cursor:none;
+  cursor:auto;
   /* V45.8 — Abril Fatface italic's ascenders/cap-height exceed .hero-h1's
      tight line-height (1.05–1.06, even tighter at the 768px breakpoint).
      Pin this wrapper's own line-height so ascenders on "Move." never get
@@ -525,7 +529,7 @@ section,footer{position:relative;z-index:1}
   padding-right:0.12em;padding-bottom:0.06em;
   transform-origin:center center;
   transform-style:preserve-3d;
-  cursor:none;
+  cursor:auto;
   transition:transform .5s cubic-bezier(.22,1,.36,1),filter .5s cubic-bezier(.22,1,.36,1);
   filter:drop-shadow(0 2px 18px rgba(232,119,22,.18));
   will-change:transform,filter;
@@ -575,7 +579,7 @@ section,footer{position:relative;z-index:1}
 }
 .hs{
   padding:22px 18px 19px;
-  text-align:center;cursor:none;
+  text-align:center;cursor:auto;
   border-right:1px solid rgba(17,17,17,.07);
   position:relative;overflow:hidden;
   transition:background .4s cubic-bezier(.22,1,.36,1),transform .4s cubic-bezier(.22,1,.36,1),box-shadow .4s cubic-bezier(.22,1,.36,1);
@@ -661,7 +665,7 @@ section,footer{position:relative;z-index:1}
 
 /* ── BUTTONS ── */
 /* btn-prim and btn-glow defined in V31 CTA block above */
-.btn-sec{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--blk);padding:13px 38px;border:1.5px solid rgba(17,17,17,.32);cursor:none;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:border-color .35s,color .35s,transform .25s,box-shadow .35s}
+.btn-sec{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--blk);padding:13px 38px;border:1.5px solid rgba(17,17,17,.32);cursor:auto;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:border-color .35s,color .35s,transform .25s,box-shadow .35s}
 .btn-sec:hover{border-color:var(--o);color:var(--o);transform:translateY(-2px);box-shadow:0 8px 28px rgba(232,119,22,.12)}
 
 /* ── SECTION COMMONS ── */
@@ -679,12 +683,12 @@ section{padding:130px 64px}
 .about-left .stitle{margin-bottom:22px}
 .about-p{font-size:15px;font-weight:400;color:rgba(17,17,17,.6);line-height:1.85;margin-bottom:28px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
-.chip{background:var(--o3);border:1px solid rgba(232,119,22,.2);padding:6px 16px;border-radius:50px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:.5px;color:var(--o4);transition:background .35s,color .35s,transform .25s cubic-bezier(.22,1,.36,1),box-shadow .35s;cursor:none}
+.chip{background:var(--o3);border:1px solid rgba(232,119,22,.2);padding:6px 16px;border-radius:50px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:.5px;color:var(--o4);transition:background .35s,color .35s,transform .25s cubic-bezier(.22,1,.36,1),box-shadow .35s;cursor:auto}
 .chip:hover{background:var(--o);color:var(--wht);transform:translateY(-3px) scale(1.04);box-shadow:0 8px 22px rgba(232,119,22,.25)}
 .about-right{display:flex;flex-direction:column;gap:18px}
 .sc{
   background:var(--wht);border:1px solid rgba(17,17,17,.08);border-radius:10px;padding:32px;
-  position:relative;overflow:hidden;cursor:none;
+  position:relative;overflow:hidden;cursor:auto;
   transition:border-color .45s cubic-bezier(.22,1,.36,1),box-shadow .45s cubic-bezier(.22,1,.36,1),transform .45s cubic-bezier(.22,1,.36,1);
   transform-style:preserve-3d;
   /* V45.11 — will-change:transform removed from here (was static/permanent
@@ -755,7 +759,7 @@ section{padding:130px 64px}
    something that already worked. */
 .sc-lbl{font-family:'Plus Jakarta Sans',sans-serif;font-size:9px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gray-on-light)}
 .sc-desc{font-size:13px;font-weight:400;color:rgba(17,17,17,.55);line-height:1.75;margin-top:10px}
-.ins-card{background:var(--blk);border-radius:10px;padding:28px 32px;display:flex;align-items:center;gap:18px;cursor:none;position:relative;overflow:hidden;transition:background .3s,transform .3s}
+.ins-card{background:var(--blk);border-radius:10px;padding:28px 32px;display:flex;align-items:center;gap:18px;cursor:auto;position:relative;overflow:hidden;transition:background .3s,transform .3s}
 .ins-card:hover{background:var(--blk2);transform:translateY(-3px)}
 .ins-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,var(--o),var(--o2))}
 .ins-icon{width:56px;height:56px;border-radius:50%;background:rgba(232,119,22,.16);display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0}
@@ -769,7 +773,7 @@ section{padding:130px 64px}
 .svc-head{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:end;margin-bottom:56px}
 .svc-head-r{font-size:15px;font-weight:400;color:rgba(17,17,17,.5);line-height:1.8}
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
-.tc{background:var(--wht);padding:44px 36px;position:relative;overflow:hidden;cursor:none;border:1px solid rgba(17,17,17,.05);transition:box-shadow .4s,border-color .3s}
+.tc{background:var(--wht);padding:44px 36px;position:relative;overflow:hidden;cursor:auto;border:1px solid rgba(17,17,17,.05);transition:box-shadow .4s,border-color .3s}
 .tc:hover{box-shadow:0 28px 72px rgba(0,0,0,.08);border-color:rgba(232,119,22,.18);z-index:2}
 .tc.expanded{border-color:rgba(232,119,22,.35);box-shadow:0 28px 72px rgba(0,0,0,.08);z-index:3}
 .tc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--o),var(--o2));transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.16,1,.3,1)}
@@ -783,7 +787,7 @@ section{padding:130px 64px}
 .tc-ico svg{width:20px;height:20px;stroke:var(--o);transition:stroke .3s}.tc:hover .tc-ico svg{stroke:var(--wht)}
 .tc-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:700;margin-bottom:10px;position:relative;z-index:1}
 .tc-desc{font-size:13px;font-weight:400;color:rgba(17,17,17,.5);line-height:1.78;position:relative;z-index:1}
-.tc-arrow{display:inline-flex;align-items:center;gap:7px;margin-top:20px;font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--o);position:relative;z-index:1;opacity:.65;transform:translateY(0);transition:all .3s;cursor:none;user-select:none}
+.tc-arrow{display:inline-flex;align-items:center;gap:7px;margin-top:20px;font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--o);position:relative;z-index:1;opacity:.65;transform:translateY(0);transition:all .3s;cursor:auto;user-select:none}
 .tc:hover .tc-arrow,.tc.expanded .tc-arrow{opacity:1}
 .tc.expanded .tc-arrow{color:var(--blk)}
 .tc-arr-icon{transition:transform .35s cubic-bezier(.22,1,.36,1)}
@@ -797,7 +801,7 @@ section{padding:130px 64px}
 .tc-detail-inner ul{list-style:none;margin:0 0 18px;padding:0;display:flex;flex-direction:column;gap:8px}
 .tc-detail-inner ul li{font-size:13px;color:rgba(17,17,17,.6);line-height:1.6;display:flex;align-items:flex-start;gap:8px}
 .tc-detail-inner ul li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--o);flex-shrink:0;margin-top:7px}
-.tc-detail-cta{display:inline-flex;align-items:center;gap:7px;font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--o);padding:10px 0;border-bottom:1.5px solid var(--o);transition:gap .2s;cursor:none}
+.tc-detail-cta{display:inline-flex;align-items:center;gap:7px;font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--o);padding:10px 0;border-bottom:1.5px solid var(--o);transition:gap .2s;cursor:auto}
 .tc-detail-cta:hover{gap:12px}
 
 /* ── STATS ── */
@@ -851,7 +855,7 @@ section{padding:130px 64px}
   border:1px solid rgba(255,255,255,.07);
   padding:40px 32px 36px;
   position:relative;overflow:hidden;
-  cursor:none;
+  cursor:auto;
   transition:background .35s,transform .4s cubic-bezier(.22,1,.36,1),border-color .3s;
   display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;
   min-height:180px;
@@ -914,14 +918,14 @@ section{padding:130px 64px}
 .why-left .stitle{margin-bottom:20px}
 .why-lead{font-size:15px;font-weight:400;color:rgba(17,17,17,.55);line-height:1.85;margin-bottom:40px}
 .pillar-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px}
-.pill{background:var(--lt);padding:24px 22px;border:1px solid rgba(17,17,17,.05);transition:background .3s,border-color .3s,transform .3s;cursor:none}
+.pill{background:var(--lt);padding:24px 22px;border:1px solid rgba(17,17,17,.05);transition:background .3s,border-color .3s,transform .3s;cursor:auto}
 .pill:hover{background:var(--o3);border-color:rgba(232,119,22,.22);transform:translateY(-3px)}
 .pill-ico{font-size:22px;margin-bottom:8px}
 .pill-ttl{font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;margin-bottom:5px}
 .pill-txt{font-size:12px;font-weight:400;color:rgba(17,17,17,.45);line-height:1.65}
 .comp-head{font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--o);margin-bottom:22px}
 .comp-list{list-style:none}
-.crow{display:flex;align-items:center;gap:14px;padding:16px 0;border-bottom:1px solid rgba(17,17,17,.06);cursor:none;
+.crow{display:flex;align-items:center;gap:14px;padding:16px 0;border-bottom:1px solid rgba(17,17,17,.06);cursor:auto;
   transition:padding-left .3s cubic-bezier(.22,1,.36,1), background .25s ease;
   border-radius:2px;
 }
@@ -978,7 +982,7 @@ section{padding:130px 64px}
   letter-spacing:1.5px;text-transform:uppercase;
   background:rgba(17,17,17,.04);color:rgba(17,17,17,.45);
   border:1px solid rgba(17,17,17,.08);
-  cursor:none;transition:background .25s,color .25s,border-color .25s,transform .2s,box-shadow .25s;
+  cursor:auto;transition:background .25s,color .25s,border-color .25s,transform .2s,box-shadow .25s;
 }
 .clf-tab:hover{background:rgba(17,17,17,.08);color:rgba(17,17,17,.75);transform:translateY(-1px)}
 .clf-tab.active{background:var(--o);color:var(--wht);border-color:var(--o);box-shadow:0 8px 24px rgba(232,119,22,.25)}
@@ -999,7 +1003,7 @@ section{padding:130px 64px}
   padding:18px 6px;
   border-bottom:1px solid rgba(17,17,17,.08);
   transition:padding-left .35s cubic-bezier(.22,1,.36,1),background .3s;
-  cursor:none;
+  cursor:auto;
 }
 .clt-row.clf-hidden{display:none}
 .clt-row:hover{padding-left:16px;background:rgba(232,119,22,.035)}
@@ -1045,7 +1049,7 @@ section{padding:130px 64px}
   display:flex;align-items:center;justify-content:center;
   padding:22px;
   overflow:hidden;
-  cursor:none;
+  cursor:auto;
   transform-style:preserve-3d;
   will-change:transform;
   transition:transform .45s cubic-bezier(.22,1,.36,1),
@@ -1097,7 +1101,7 @@ section{padding:130px 64px}
 .team{background:var(--lt)}
 .team-inner{display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:center}
 .team-left .stitle{margin-bottom:26px}
-.glitch-name{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(32px,4.5vw,56px);font-weight:800;letter-spacing:-1.5px;margin-bottom:6px;display:inline-block;position:relative;cursor:none}
+.glitch-name{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(32px,4.5vw,56px);font-weight:800;letter-spacing:-1.5px;margin-bottom:6px;display:inline-block;position:relative;cursor:auto}
 .glitch-name::before,.glitch-name::after{content:attr(data-text);position:absolute;top:0;left:0;font-family:'Plus Jakarta Sans',sans-serif;font-size:inherit;font-weight:800;letter-spacing:-1.5px;opacity:0}
 .glitch-name::before{color:var(--o);clip-path:polygon(0 30%,100% 30%,100% 50%,0 50%)}
 .glitch-name::after{color:#2980b9;clip-path:polygon(0 62%,100% 62%,100% 78%,0 78%)}
@@ -1108,9 +1112,9 @@ section{padding:130px 64px}
 .team-role-lbl{font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--o);margin-bottom:24px}
 .team-bio{font-size:15px;font-weight:400;color:rgba(17,17,17,.6);line-height:1.88;margin-bottom:32px}
 .team-tags{display:flex;gap:9px;flex-wrap:wrap}
-.ttag{background:var(--lt2);padding:7px 16px;border-radius:50px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:600;color:var(--blk2);transition:background .3s,color .3s,transform .2s;cursor:none}
+.ttag{background:var(--lt2);padding:7px 16px;border-radius:50px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:600;color:var(--blk2);transition:background .3s,color .3s,transform .2s;cursor:auto}
 .ttag:hover{background:var(--o);color:var(--wht);transform:translateY(-2px)}
-.team-card{background:var(--wht);border-radius:12px;padding:48px;position:relative;overflow:hidden;cursor:none;border:1px solid rgba(17,17,17,.08);transition:box-shadow .3s,transform .3s}
+.team-card{background:var(--wht);border-radius:12px;padding:48px;position:relative;overflow:hidden;cursor:auto;border:1px solid rgba(17,17,17,.08);transition:box-shadow .3s,transform .3s}
 .team-card:hover{box-shadow:0 22px 65px rgba(0,0,0,.09);transform:translateY(-4px)}
 .team-card::after{content:'';position:absolute;top:0;right:0;width:150px;height:150px;border-radius:50%;border:55px solid rgba(232,119,22,.06);transform:translate(42px,-42px);pointer-events:none}
 .tc-qm{font-family:'Plus Jakarta Sans',sans-serif;font-size:96px;font-weight:800;color:rgba(232,119,22,.1);line-height:.6;margin-bottom:14px}
@@ -1129,7 +1133,7 @@ section{padding:130px 64px}
 .cta-desc{font-size:15px;font-weight:400;color:rgba(255,255,255,.38);margin-bottom:48px;line-height:1.75}
 .cta-btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
 /* btn-gh2 secondary CTA */
-.btn-gh2{display:inline-flex;align-items:center;gap:10px;background:transparent;color:rgba(255,255,255,.5);padding:14px 42px;border:1.5px solid rgba(255,255,255,.15);cursor:none;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:border-color .3s,color .3s}
+.btn-gh2{display:inline-flex;align-items:center;gap:10px;background:transparent;color:rgba(255,255,255,.5);padding:14px 42px;border:1.5px solid rgba(255,255,255,.15);cursor:auto;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:border-color .3s,color .3s}
 .btn-gh2:hover{border-color:rgba(232,119,22,.45);color:var(--wht)}
 .cta-contact{margin-top:60px;display:flex;justify-content:center;gap:50px;flex-wrap:wrap;padding-top:48px;border-top:1px solid rgba(255,255,255,.06)}
 .cc{text-align:center}
@@ -1587,7 +1591,7 @@ html.lenis{height:auto}
   letter-spacing:1.5px;text-transform:uppercase;
   background:rgba(255,255,255,.06);color:rgba(255,255,255,.45);
   border:1px solid rgba(255,255,255,.1);
-  cursor:none;transition:background .25s,color .25s,border-color .25s,transform .2s;
+  cursor:auto;transition:background .25s,color .25s,border-color .25s,transform .2s;
 }
 .wf-tab:hover{background:rgba(255,255,255,.12);color:rgba(255,255,255,.75);transform:translateY(-1px)}
 .wf-tab.active{background:var(--o);color:var(--wht);border-color:var(--o)}
@@ -1613,7 +1617,7 @@ html.lenis{height:auto}
    lift/scale (below, pre-existing) supplies the per-card motion; see
    .wk-card:hover for the added accent-glow layered on top of it. */
 /* Card base */
-.wk-card{border-radius:16px;overflow:hidden;cursor:none;position:relative;aspect-ratio:3/2;transition:transform .5s cubic-bezier(.22,1,.36,1),box-shadow .5s,opacity .75s cubic-bezier(.22,1,.36,1);opacity:1}
+.wk-card{border-radius:16px;overflow:hidden;cursor:auto;position:relative;aspect-ratio:3/2;transition:transform .5s cubic-bezier(.22,1,.36,1),box-shadow .5s,opacity .75s cubic-bezier(.22,1,.36,1);opacity:1}
 @media(min-width:640px){.wk-card{aspect-ratio:4/3}}
 /* V45.18 — .wk-card entrance moved off GSAP/ScrollTrigger entirely.
    Repeated attempts to fix intermittent/eventually-total invisibility
@@ -4124,6 +4128,35 @@ html.ps-intro-on #hero,html.ps-intro-on #hero *{animation-play-state:paused!impo
 })();
 </script>
 
+<style id="prosign-v79-fixes">
+/* V79 — audit fixes */
+/* 1 — split headings never break mid-word */
+.st-word{display:inline-block;white-space:nowrap}
+.cta-title{text-wrap:balance}
+.cta-title em{white-space:nowrap}
+/* 3 — core competency list: steady text (the white shine erased letters on the light background) */
+.comp-list .shiny-text{animation:none!important;background:none!important;-webkit-text-fill-color:currentColor!important;color:var(--blk);transition:color .25s ease}
+.comp-list .crow:hover .shiny-text{color:var(--o)}
+/* 4a — work: the "18+ years" card becomes a full-width banner instead of a lone half tile */
+@media (min-width:901px){
+  .work-sec:not(.h-scroll-active) .work-grid > .wk-cta-card{grid-column:1 / -1;aspect-ratio:auto!important;min-height:184px}
+  .work-sec:not(.h-scroll-active) .work-grid > .wk-cta-card .wk-cta-inner{display:grid;grid-template-columns:auto auto 1fr auto;grid-template-rows:auto auto;
+    column-gap:30px;align-items:center;justify-items:start;text-align:left;padding:32px 48px}
+  .work-sec:not(.h-scroll-active) .wk-cta-card .wk-cta-icon{grid-row:1 / 3;margin:0}
+  .work-sec:not(.h-scroll-active) .wk-cta-card .wk-cta-num{grid-row:1 / 3;margin:0}
+  .work-sec:not(.h-scroll-active) .wk-cta-card .wk-cta-headline{grid-column:3;grid-row:1;align-self:end;margin:0 0 6px}
+  .work-sec:not(.h-scroll-active) .wk-cta-card .wk-cta-headline br{display:none}
+  .work-sec:not(.h-scroll-active) .wk-cta-card .wk-cta-sub{grid-column:3;grid-row:2;align-self:start;margin:0;color:rgba(255,255,255,.5)}
+  .work-sec:not(.h-scroll-active) .wk-cta-card .wk-cta-btn{grid-column:4;grid-row:1 / 3;justify-self:end}
+}
+/* 4b — testimonials: a lone last quote spans the full width */
+.testi-grid > .tq:last-child:nth-child(even){grid-column:1 / -1}
+/* 5 — line icons in "Why choose us" */
+.pill-ico svg{display:block;width:24px;height:24px;fill:none;stroke:#E87716;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+/* 7 — native pointer; the floating custom cursor is switched off */
+#cur-wrap{display:none!important}
+a[href],button:not(:disabled),[role="button"],[role="tab"],[role="radio"],label[for],select,summary,.tc,.wk-card{cursor:pointer}
+</style>
 </head>
 <body>
 <!-- V76 — INTRO: press registration -->
@@ -4303,7 +4336,7 @@ html.ps-intro-on #hero,html.ps-intro-on #hero *{animation-play-state:paused!impo
 </div>
 <div class="hero-badge-line"></div>
 </div>
-<h1 class="hero-h1" id="vp-line">
+<h1 class="hero-h1" id="vp-line" aria-label="We make brands move.">
 <span id="vp-pre">We Make </span><span id="sw-roll-wrap"><span class="sw-word sw-entering" id="sw-active">Brands</span></span><br/><span class="move-word-wrap"><span class="move-word" data-cursor="SINCE 2008" id="vp-move">Move.</span></span>
 </h1>
 <div class="hero-btm">
@@ -4626,10 +4659,10 @@ html.ps-intro-on #hero,html.ps-intro-on #hero *{animation-play-state:paused!impo
 <h2 class="stitle rv fl rd1">The Agency<br/><em>That Delivers</em></h2>
 <p class="why-lead rv fl rd2">We don't compare ourselves to other agencies. We compare ourselves to your last campaign — and we make sure the next one is bigger. INS-accredited, Chennai-rooted, PAN India executed.</p>
 <div class="pillar-grid">
-<div class="pill"><div class="pill-ico">🎯</div><div class="pill-ttl">Data Driven</div><div class="pill-txt">Every campaign anchored in research and measurable outcomes.</div></div>
-<div class="pill"><div class="pill-ico">⚡</div><div class="pill-ttl">Time-Bound</div><div class="pill-txt">Any media activity delivered on time, every time.</div></div>
-<div class="pill"><div class="pill-ico">🏅</div><div class="pill-ttl">INS Accredited</div><div class="pill-txt">India's most prestigious advertising body recognition.</div></div>
-<div class="pill"><div class="pill-ico">🔗</div><div class="pill-ttl">Industry Connect</div><div class="pill-txt">Deep networks across media, publishers and platforms.</div></div>
+<div class="pill"><div class="pill-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg></div><div class="pill-ttl">Data Driven</div><div class="pill-txt">Every campaign anchored in research and measurable outcomes.</div></div>
+<div class="pill"><div class="pill-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9.5 2.5h5"/></svg></div><div class="pill-ttl">Time-Bound</div><div class="pill-txt">Any media activity delivered on time, every time.</div></div>
+<div class="pill"><div class="pill-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5 7 21.5l5-2.5 5 2.5-1.5-8"/></svg></div><div class="pill-ttl">INS Accredited</div><div class="pill-txt">India's most prestigious advertising body recognition.</div></div>
+<div class="pill"><div class="pill-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"/></svg></div><div class="pill-ttl">Industry Connect</div><div class="pill-txt">Deep networks across media, publishers and platforms.</div></div>
 </div>
 </div>
 <div class="rv fr rd1">
@@ -6326,18 +6359,20 @@ document.querySelectorAll('.shiny-text').forEach((el,i)=>el.style.animationDelay
     var html = '';
     el.childNodes.forEach(function(node){
       if(node.nodeType === 3){ /* text node */
-        var chars = node.textContent.split('');
-        chars.forEach(function(ch){
-          if(ch === ' '){
-            html += ' ';
-          } else {
-            html += '<span class="st-mask-outer"><span class="st-mask-inner">'+ch+'</span></span>';
-          }
+        /* V79 — keep each word's letters together so a heading can never
+           break mid-word (e.g. "Bran / d?") */
+        node.textContent.split(/(\s+)/).forEach(function(tok){
+          if(!tok) return;
+          if(/^\s+$/.test(tok)){ html += ' '; return; }
+          html += '<span class="st-word">' + tok.split('').map(function(ch){
+            return '<span class="st-mask-outer"><span class="st-mask-inner">'+ch+'</span></span>';
+          }).join('') + '</span>';
         });
       } else if(node.nodeType === 1){ /* element node — keep intact */
         html += node.outerHTML;
       }
     });
+    if(!el.getAttribute('aria-label')) el.setAttribute('aria-label', el.textContent.replace(/\s+/g,' ').trim());
     el.innerHTML = html;
   }
 
@@ -6868,7 +6903,7 @@ document.querySelectorAll('.shiny-text').forEach((el,i)=>el.style.animationDelay
 })();
 
 /* V34 Signature */
-console.log('%cProsign Communications v34 — Constellation Edition','color:#E87716;font-family:serif;font-size:14px;font-style:italic;font-weight:bold');
+
 
 
 /* ── 10. MOBILE TAP RIPPLE ── */
@@ -7628,7 +7663,7 @@ console.log('%cProsign Communications v34 — Constellation Edition','color:#E87
   });
 })();
 
-console.log('%cProsign Communications v41 — Vanta + Move. + 3D Stats','color:#E87716;font-family:serif;font-size:15px;font-style:italic;font-weight:bold');
+
 
 /* ════════════════════════════════════════════════
    V45 — HERO H1 CHAR-LEVEL SPRING REVEAL
