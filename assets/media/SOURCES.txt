@@ -1,0 +1,33 @@
+Media logos used in the homepage "media reveal" (downloaded 2026-11-22 from Wikimedia Commons).
+Commons licence tags cover copyright only. Every logo remains a trademark of its owner;
+show only outlets Prosign actually buys media from.
+
+the-hindu.svg            https://commons.wikimedia.org/wiki/File:The_Hindu_logo.svg                      Public domain
+times-of-india.svg       https://commons.wikimedia.org/wiki/File:The_times_of_india.svg                  Public domain (a redraw of the masthead)
+deccan-chronicle.webp    https://commons.wikimedia.org/wiki/File:Deccan_Chronicle_Logo.png               Public domain
+hindustan-times.svg      https://commons.wikimedia.org/wiki/File:Hindustan_Times_logo.svg                Public domain
+economic-times.svg       https://commons.wikimedia.org/wiki/File:The_Economic_Times_logo.svg             Public domain
+indian-express.svg       https://commons.wikimedia.org/wiki/File:The_Indian_Express_logo.svg             Public domain
+the-telegraph.svg        https://commons.wikimedia.org/wiki/File:The_Telegraph_(Calcutta)_Logo.svg       Public domain
+mint.svg                 https://commons.wikimedia.org/wiki/File:Mint_(newspaper)_logo.svg               Public domain
+eenadu.webp              https://commons.wikimedia.org/wiki/File:Eenadu_front_page_logo_new.png          Public domain
+dainik-bhaskar.webp      https://commons.wikimedia.org/wiki/File:Dainik_Bhaskar_Logo.svg                 Public domain
+dinakaran.webp           https://commons.wikimedia.org/wiki/File:Dinakaran_Newspaper_(Logo).svg          Public domain
+sakshi.webp              https://commons.wikimedia.org/wiki/File:Sakshi_newspaper_logo.png               Public domain
+anandabazar-patrika.webp https://commons.wikimedia.org/wiki/File:আনন্দবাজার_পত্রিকার_লোগো.svg            Public domain
+lokmat.webp              https://commons.wikimedia.org/wiki/File:LokmatLogo.jpg                          Public domain
+sun-tv.webp              https://commons.wikimedia.org/wiki/File:Sun_TV_Logo_2026.png                    Public domain
+star-vijay.webp          https://commons.wikimedia.org/wiki/File:Star_Vijay_logo_2023.png                CC BY-SA 4.0 (attribution required)
+youtube.svg              https://commons.wikimedia.org/wiki/File:YouTube_Logo_2017.svg                   Public domain
+zee-tamil.webp           https://commons.wikimedia.org/wiki/File:Zee_Tamil_2025.svg                      Public domain
+big-fm.webp              https://commons.wikimedia.org/wiki/File:BigFM_Logo.png                          Public domain (low resolution, 256px source)
+meta.svg                 https://commons.wikimedia.org/wiki/File:Meta_Platforms_Inc._logo.svg            Public domain
+google.svg               https://commons.wikimedia.org/wiki/File:Google_2015_logo.svg                    Public domain
+jiohotstar.webp          https://commons.wikimedia.org/wiki/File:JioHotstar_2025.png                     Public domain
+colors-kannada.webp      https://commons.wikimedia.org/wiki/File:ColorsKannadaLogo.png                   Public domain
+
+Processing: white backgrounds removed (Lokmat, Eenadu), empty margins trimmed, rasters resized to WebP;
+Meta and The Telegraph SVGs given a viewBox so they scale. No logo artwork was altered.
+Still text-only (no freely licensed file found): The New Indian Express, Business Line, Deccan Herald,
+Daily Thanthi, Malayala Manorama, Dinamalar, Dinamani, Vijay Karnataka, Mathrubhumi, Prajavani,
+Gujarat Samachar, Radio Mirchi, Suryan FM, Red FM.
